@@ -432,23 +432,23 @@ total = sum(10, 20);
 # print (globvar)        # 输出 1
 # print_globvar()        # 输出 1，函数内的 globvar 已经是全局变量
 
-# #demop26:列表反转函数
-# def reverse(li):
-#     for i in range(0,int(len(li)/2)):
-#         temp = li[i];
-#         li[i] = li[-i-1];
-#         li[-i-1] = temp;
-#         print(i)
-#
-# li = [1,2,3,4,5,6]
-# # print(len(li))
-# # print(isinstance(li[3],int))
-# # print(isinstance(li,str))
-# reverse(li)
-# print(li)
-# #直接调用reverse()函数反转
-# li.reverse()
-# print (li)
+#demop26:列表反转函数
+def reverse(li):
+    for i in range(0,int(len(li)/2)):
+        temp = li[i];
+        li[i] = li[-i-1];
+        li[-i-1] = temp;
+        print(i)
+
+li = [1,2,3,4,5,6]
+# print(len(li))
+# print(isinstance(li[3],int))
+# print(isinstance(li,str))
+reverse(li)
+print(li)
+#直接调用reverse()函数反转
+li.reverse()
+print (li)
 
 
 
