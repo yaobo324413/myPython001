@@ -29,11 +29,11 @@ print (y)
 # 不换行输出
 print (x,y)
 
-#demo4：删除变量del
-var1 = 1
-var2 = 10
-del (var1,var2);
-print (var1, var2);
+# #demo4：删除变量del
+# var1 = 1
+# var2 = 10
+# del (var1,var2);
+# print (var1, var2);
 
 
 
