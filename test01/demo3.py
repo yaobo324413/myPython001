@@ -11,23 +11,23 @@ while True:
    print (start*2);
    start +=1;
 
-# #demo2
-# import sys; x= 'runoob'; sys.stdout.write(x + '\n');
+#demo2
+import sys; x= 'runoob'; sys.stdout.write(x + '\n');
 
-# #demo3
-# x="a"
-# y="b"
-# # 换行输出
-# print (x)
-# print (y)
-#
-# print ('---------'),
-# # 不换行输出
-# print (x,'', end=''),
-# print (y)
-#
-# # 不换行输出
-# print (x,y)
+#demo3
+x="a"
+y="b"
+# 换行输出
+print (x)
+print (y)
+
+print ('---------'),
+# 不换行输出
+print (x,'', end=''),
+print (y)
+
+# 不换行输出
+print (x,y)
 
 # #demo4：删除变量del
 # var1 = 1
