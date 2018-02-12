@@ -33,7 +33,19 @@ print (x,y)
 var1 = 1
 var2 = 10
 del (var1,var2);
-print (var1, var2);
+# print (var1, var2);
+
+#demo5：字符串
+str1 = 'Hello World!';
+print (str1);
+print (str1[0]);
+print (str1[2:7]);
+print (str1[2:]);
+print (str1 * 2);
+print (str1 + 'test');
+#判断变量类型的两种方式——type()和isinstance():
+# print (type(str1));
+# print (isinstance(str1,str));
 
 #demop26:列表反转函数
 def reverse(li):
