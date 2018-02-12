@@ -415,22 +415,22 @@ total = sum(10, 20);
 # sum(10, 20);
 # print ("函数外是全局变量 : ", total)
 
-#demo25:全局变量想作用于函数内，需加 global
-# globvar = 2
-# def print_globvar():
-#     print(globvar)     # 没有使用 global
-#
-# def set_globvar_to_one():
-#     global globvar     # 使用 global 声明全局变量
-#     globvar = 1
-#
-# def print_globvar():
-#     print(globvar)     # 没有使用 global
-#
-# print_globvar()        # 输出 1，函数内的 globvar 已经是全局变量
-# set_globvar_to_one()
-# print (globvar)        # 输出 1
-# print_globvar()        # 输出 1，函数内的 globvar 已经是全局变量
+demo25:全局变量想作用于函数内，需加 global
+globvar = 2
+def print_globvar():
+    print(globvar)     # 没有使用 global
+
+def set_globvar_to_one():
+    global globvar     # 使用 global 声明全局变量
+    globvar = 1
+
+def print_globvar():
+    print(globvar)     # 没有使用 global
+
+print_globvar()        # 输出 1，函数内的 globvar 已经是全局变量
+set_globvar_to_one()
+print (globvar)        # 输出 1
+print_globvar()        # 输出 1，函数内的 globvar 已经是全局变量
 
 #demop26:列表反转函数
 def reverse(li):
