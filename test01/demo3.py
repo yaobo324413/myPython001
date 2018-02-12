@@ -18,8 +18,8 @@ import sys; x= 'runoob'; sys.stdout.write(x + '\n');
 x="a"
 y="b"
 # 换行输出
-print (x)
-print (y)
+# print (x)
+# print (y)
 
 print ('---------'),
 # 不换行输出
@@ -29,9 +29,27 @@ print (y)
 # 不换行输出
 print (x,y)
 
-# #demo4：删除变量del
-# var1 = 1
-# var2 = 10
-# del (var1,var2);
-# print (var1, var2);
+#demo4：删除变量del
+var1 = 1
+var2 = 10
+del (var1,var2);
+print (var1, var2);
+
+#demop26:列表反转函数
+def reverse(li):
+    for i in range(0,int(len(li)/2)):
+        temp = li[i];
+        li[i] = li[-i-1];
+        li[-i-1] = temp;
+        print(i)
+
+li = [1,2,3,4,5,6]
+# print(len(li))
+# print(isinstance(li[3],int))
+# print(isinstance(li,str))
+reverse(li)
+print(li)
+#直接调用reverse()函数反转
+li.reverse()
+print (li)
 
